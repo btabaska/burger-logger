@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", (req, res) => {
-  burger.createOneValue(req.body.name, req.body.sleepy, (result) => {
+  burger.createOneValue(req.body.name, req.body.devoured, (result) => {
     res.json({ id: result.insertId });
   });
 });

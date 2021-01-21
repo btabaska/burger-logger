@@ -11,7 +11,7 @@ const orm = {
     });
   },
   insertOne(table, name, devoured, cb) {
-    let queryString = `INSERT INTO ${table} ("name", "devoured") VALUES (?,?)`;
+    let queryString = `INSERT INTO ${table} (burger_name, devoured) VALUES (?,?)`;
     connection.query(queryString, [name, devoured], (err, result) => {
       if (err) {
         throw err;
