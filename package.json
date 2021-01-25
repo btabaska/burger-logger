@@ -18,6 +18,9 @@
     "url": "https://github.com/btabaska/burger-logger/issues"
   },
   "homepage": "https://github.com/btabaska/burger-logger#readme",
+  "production": {
+    "use_env_variable": "JAWSDB_URL"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
